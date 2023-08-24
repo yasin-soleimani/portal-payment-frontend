@@ -1,0 +1,272 @@
+[
+  {
+    "bin": "------",
+    "name": "کارت جدید",
+    "icon": "",
+    "color": "#525252"
+  },
+  {
+    "bin": "141272",
+    "name": "کارت اعتباری ایرانیان",
+    "icon": "ic_bank_icc",
+    "color": "#152A68"
+  },
+  {
+    "bin": "603799",
+    "name": "بانک ملی ایران",
+    "icon": "ic_bank_melli",
+    "color": "#B8B38D"
+  },
+  {
+    "bin": "589210",
+    "name": "بانک سپه",
+    "icon": "ic_bank_sepah",
+    "color": "#FC6E16"
+  },
+  {
+    "bin": "627648",
+    "name": "بانک توسعه صادرات",
+    "icon": "ic_bank_tosee_saderat",
+    "color": "#425334"
+  },
+  {
+    "bin": "207177",
+    "name": "بانک توسعه صادرات",
+    "icon": "ic_bank_tosee_saderat",
+    "color": "#425334"
+  },
+  {
+    "bin": "627961",
+    "name": "بانک صنعت و معدن",
+    "icon": "ic_bank_sanat_madan",
+    "color": "#2E247D"
+  },
+  {
+    "bin": "603770",
+    "name": "بانک کشاورزی",
+    "icon": "ic_bank_keshavarzi",
+    "color": "#C3C26D"
+  },
+  {
+    "bin": "639217",
+    "name": "بانک کشاورزی",
+    "icon": "ic_bank_keshavarzi",
+    "color": "#C3C26D"
+  },
+  {
+    "bin": "628023",
+    "name": "بانک مسکن",
+    "icon": "ic_bank_maskan",
+    "color": "#ED4B2C"
+  },
+  {
+    "bin": "627760",
+    "name": "پست بانک ایران",
+    "icon": "ic_bank_postbank",
+    "color": "#00592C"
+  },
+  {
+    "bin": "502908",
+    "name": "بانک توسعه تعاون",
+    "icon": "ic_bank_toseetavon",
+    "color": "#2E9797"
+  },
+  {
+    "bin": "627412",
+    "name": "بانک اقتصاد نوین",
+    "icon": "ic_bank_en",
+    "color": "#710094"
+  },
+  {
+    "bin": "622106",
+    "name": "بانک پارسیان",
+    "icon": "ic_bank_parsian",
+    "color": "#9A273A"
+  },
+  {
+    "bin": "622107",
+    "name": "بانک پارسیان",
+    "icon": "ic_bank_parsian",
+    "color": "#9A273A"
+  },
+  {
+    "bin": "622108",
+    "name": "بانک پارسیان",
+    "icon": "ic_bank_parsian",
+    "color": "#9A273A"
+  },
+  {
+    "bin": "639194",
+    "name": "بانک پارسیان",
+    "icon": "ic_bank_parsian",
+    "color": "#9A273A"
+  },
+  {
+    "bin": "627884",
+    "name": "بانک پارسیان",
+    "icon": "ic_bank_parsian",
+    "color": "#9A273A"
+  },
+  {
+    "bin": "639347",
+    "name": "بانک پاسارگاد",
+    "icon": "ic_bank_pasargad",
+    "color": "#000000"
+  },
+  {
+    "bin": "502229",
+    "name": "بانک پاسارگاد",
+    "icon": "ic_bank_pasargad",
+    "color": "#000000"
+  },
+  {
+    "bin": "627488",
+    "name": "بانک کارآفرین",
+    "icon": "ic_bank_karafarin",
+    "color": "#157127"
+  },
+  {
+    "bin": "502910",
+    "name": "بانک کارآفرین",
+    "icon": "ic_bank_karafarin",
+    "color": "#157127"
+  },
+  {
+    "bin": "621986",
+    "name": "بانک سامان",
+    "icon": "ic_bank_saman",
+    "color": "#3DB4EA"
+  },
+  {
+    "bin": "639346",
+    "name": "بانک سینا",
+    "icon": "ic_bank_sina",
+    "color": "#17479C"
+  },
+  {
+    "bin": "639607",
+    "name": "بانک سرمایه",
+    "icon": "ic_bank_en",
+    "color": "#161553"
+  },
+  {
+    "bin": "636214",
+    "name": "بانک آینده",
+    "icon": "ic_bank_ayandeh",
+    "color": "#C38C11"
+  },
+  {
+    "bin": "502806",
+    "name": "بانک شهر",
+    "icon": "ic_bank_shahr",
+    "color": "#E90030"
+  },
+  {
+    "bin": "504706",
+    "name": "بانک شهر",
+    "icon": "ic_bank_shahr",
+    "color": "#E90030"
+  },
+  {
+    "bin": "502938",
+    "name": "بانک دی",
+    "icon": "ic_bank_day",
+    "color": "#008A9F"
+  },
+  {
+    "bin": "603769",
+    "name": "بانک صادرات",
+    "icon": "ic_bank_saderat",
+    "color": "#205799"
+  },
+  {
+    "bin": "610433",
+    "name": "بانک ملت",
+    "icon": "ic_bank_mellat",
+    "color": "#E45984"
+  },
+  {
+    "bin": "991975",
+    "name": "بانک ملت",
+    "icon": "ic_bank_mellat",
+    "color": "#E45984"
+  },
+  {
+    "bin": "627353",
+    "name": "بانک تجارت",
+    "icon": "ic_bank_tejarat",
+    "color": "#2FBEC5"
+  },
+  {
+    "bin": "585983",
+    "name": "بانک تجارت",
+    "icon": "ic_bank_tejarat",
+    "color": "#2FBEC5"
+  },
+  {
+    "bin": "589463",
+    "name": "بانک رفاه",
+    "icon": "ic_bank_refah",
+    "color": "#140634"
+  },
+  {
+    "bin": "627381",
+    "name": "بانک انصار",
+    "icon": "ic_bank_ansar",
+    "color": "#BDBBBC"
+  },
+  {
+    "bin": "505785",
+    "name": "بانک ایران زمین",
+    "icon": "ic_bank_iran_zamin",
+    "color": "#593092"
+  },
+  {
+    "bin": "636949",
+    "name": "بانک حکمت ایرانیان",
+    "icon": "ic_bank_hekmat_iranian",
+    "color": "#290094"
+  },
+  {
+    "bin": "505416",
+    "name": "بانک گردشگری",
+    "icon": "ic_bank_gardeshgari",
+    "color": "#AE0F0A"
+  },
+  {
+    "bin": "606373",
+    "name": "بانک قرض الحسنه مهر ایران",
+    "icon": "ic_bank_mehr",
+    "color": "#289925"
+  },
+  {
+    "bin": "628157",
+    "name": "موسسه اعتباری توسعه",
+    "icon": "ic_bank_etebaritosee",
+    "color": "#881F1C"
+  },
+  {
+    "bin": "505801",
+    "name": "موسسه اعتباری کوثر",
+    "icon": "ic_bank_kousar",
+    "color": "#82186B"
+  },
+  {
+    "bin": "639370",
+    "name": "موسسه اعتباری مهر",
+    "icon": "ic_bank_mehr",
+    "color": "#1E8910"
+  },
+  {
+    "bin": "639599",
+    "name": "بانک قوامین",
+    "icon": "ic_bank_ghavamin",
+    "color": "#950018"
+  },
+  {
+    "bin": "504172",
+    "name": "بانک رسالت",
+    "icon": "ic_bank_ghavamin",
+    "color": "#235EA6"
+  }
+]

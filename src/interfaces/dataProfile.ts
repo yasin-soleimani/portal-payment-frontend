@@ -1,0 +1,29 @@
+export interface DataProfile {
+  aboutme: string;
+  account_no: number;
+  address: string;
+  birthdate: number;
+  city: string;
+  email: string;
+  fullname: string;
+  islegal: boolean;
+  message: string;
+  mobile: number;
+  mywebsite: string;
+  nationalcode: string;
+  organ: string;
+  place: string;
+  ref: string;
+  senf: string;
+  showMyEmailToOthers: boolean;
+  showMyIranianShopLink: boolean;
+  showMyOwnShopLink: boolean;
+  showMyTellToOthers: boolean;
+  showMyTransferLink: boolean;
+  sms: boolean;
+  state: string;
+  status: number;
+  success: boolean;
+  tell: string;
+  zipcode: number;
+}

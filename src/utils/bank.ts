@@ -30,7 +30,7 @@ export default class CountryCodes {
   }
 
   private loadData(): void {
-    import("../../assets/json/country-codes.json").then((data) => {
+    const data = import("../../assets/json/country-codes.json").then((data) => {
       this.data = data.default;
     });
   }

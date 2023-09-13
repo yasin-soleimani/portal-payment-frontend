@@ -26,6 +26,7 @@ export default Vue.extend({
   -moz-osx-font-smoothing: grayscale;
   text-align: $text-center;
   color: #2c3e50;
+  background-color: $background-color;
 }
 
 .container {

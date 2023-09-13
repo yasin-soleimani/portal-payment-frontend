@@ -1,56 +1,33 @@
 <template>
-  <div>
-    <v-card class="parentTransactions pb-5">
-      <div>
-        <div class="parent-all-transactions mx-5">
-          <p class="my-4">
-            واریز و برداشت را اطلاع بده (هزینه به ازای هر اطلاع‌رسانی ۵۰۰ ریال
-            است)
-          </p>
-
-          <div class="mx-3">
-            <v-switch v-model="switch1"></v-switch>
-          </div>
-          <!-- <div
-            @click="ButtonTransactions"
-            class="parentButtonToggleNotifTransactions"
-          >
-            <button
-              class="buttonToggleNotifTransactions mx-3 my-3"
-              :class="{ activeButton: toggleButtonTransactions }"
-              depressed
-              small
-            ></button>
-          </div> -->
-          <div>
-            <p
-              class="text-all-transactions my-4 mx-12"
-              style="position: absolute; left: 0"
-            >
-              همه تراکنش ها
-            </p>
-          </div>
-          <br />
-        </div>
-        <div></div>
-      </div>
+  <v-card class="mx-auto parent-dashboard-card rounded-lg">
+    <!-- default main panel -->
+    <default-main-panel />
+    <v-card class="parentTransactions pb-5 elevation-0">
       <section class="styleTransactions">
-        <hr />
-
         <div class="scrol-transactions">
-          <v-simple-table :height="'540px'" :fixed-header="true">
+          <v-simple-table class="table" :height="'580px'" :fixed-header="true">
             <template v-slot:default>
               <thead>
                 <tr>
+                  <th class="item-nav-table text-right">
+                    توضیحاتی در مورد تراکنش
+                  </th>
+                  <th class="item-nav-table text-center">مبلغ(ریال)</th>
                   <th class="item-nav-table text-center">وضعیت</th>
                   <th class="item-nav-table text-center">تاریخ و ساعت</th>
-                  <th class="item-nav-table text-center">توضیحات</th>
-                  <th class="item-nav-table text-center">مبلغ(ریال)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr v-for="item in datas" :key="item._id">
-                  <td class="item-table">
+                  <td class="item-table table-text-color text-right">
+                    {{ item.title }}
+                  </td>
+
+                  <td class="item-table table-text-color text-center">
+                    {{ item.amount }} ریال
+                  </td>
+
+                  <td class="item-table table-text-color text-center">
                     <i
                       class="green--text"
                       :class="{
@@ -59,9 +36,9 @@
                       }"
                     ></i>
                   </td>
-                  <td class="item-table">{{ createdAt }}</td>
-                  <td class="item-table">{{ item.title }}</td>
-                  <td class="item-table">{{ item.amount }}</td>
+                  <td class="item-table table-text-color text-center">
+                    {{ createdAt }}
+                  </td>
                 </tr>
               </tbody>
             </template>
@@ -69,7 +46,7 @@
         </div>
       </section>
     </v-card>
-  </div>
+  </v-card>
 </template>
 
 <script lang="ts">
@@ -77,11 +54,13 @@ import Vue from "vue";
 import { mapGetters } from "vuex";
 import moment from "jalali-moment";
 import store from "@/store";
+import DefaultMainPanel from "./DefaultMainPanel.vue";
 interface toggleButton {
   toggleButtonTransactions: boolean;
   switch1: boolean;
 }
 export default Vue.extend({
+  components: { DefaultMainPanel },
   name: "ListTransactions",
 
   data(): toggleButton {
@@ -118,13 +97,18 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+.parent-dashboard-card {
+  min-width: 100% !important;
+  max-width: 100% !important;
+  background-color: $background-item;
+}
 .parentTransactions {
   max-width: 90%;
   display: flex;
   margin: $margin-mx;
   justify-content: $justify-flex-start;
   flex-wrap: wrap;
-  background: $background-item-panel !important;
+  background: $background-color;
   border-radius: $border-radius;
 }
 
@@ -199,9 +183,18 @@ export default Vue.extend({
   }
 }
 
+.table {
+  background-color: $background-color;
+}
+
+.table-text-color {
+  color: $background-item;
+}
+
 .item-table {
   width: 20%;
   color: $color-text;
+  border-bottom: 0px solid;
 }
 
 @media only screen and (max-width: 777px) {

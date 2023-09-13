@@ -1,8 +1,8 @@
 <template>
-  <div class="itemCardNavbarMain mt-5">
-    <div class="MainPanel mt-12">
-      <default-main-panel />
-      <router-view class="mt-10" />
+  <div class="itemCardNavbarMain mt-1">
+    <div class="MainPanel">
+      <!-- <default-main-panel /> -->
+      <router-view class="mt-0" />
     </div>
   </div>
 </template>
@@ -10,7 +10,7 @@
 <script lang="ts">
 import Vue from "vue";
 // import NavigationPanel from "@/components/NavigationPanel.vue";
-import DefaultMainPanel from "@/components/DefaultMainPanel.vue";
+// import DefaultMainPanel from "@/components/DefaultMainPanel.vue";
 import store from "@/store";
 
 export default Vue.extend({
@@ -20,7 +20,7 @@ export default Vue.extend({
     // ListTransactions,
     // NavigationCard,
     // NavigationPanel,
-    DefaultMainPanel,
+    // DefaultMainPanel,
   },
 
   computed: {
@@ -38,11 +38,11 @@ export default Vue.extend({
 <style lang="scss" scpped>
 .parentItemCardNavbarMain {
   overflow: hidden;
-  padding: 5px 0px;
 }
 
 .itemCardNavbarMain {
-  max-width: 90%;
+  max-width: 100%;
+  min-width: 60%;
   margin: $margin-mx;
   max-height: 50%;
   justify-content: $justify-center;

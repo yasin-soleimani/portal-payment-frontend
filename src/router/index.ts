@@ -34,14 +34,14 @@ const routes: Array<RouteConfig> = [
     component: Dashboard,
     children: [
       {
-        path: "ListTransactions",
-        name: "ListTransactions",
-        component: ListTransactions,
-      },
-      {
         path: "DefaultMainPanel",
         name: "DefaultMainPanel",
         component: DefaultMainPanel,
+      },
+      {
+        path: "ListTransactions",
+        name: "ListTransactions",
+        component: ListTransactions,
       },
       {
         path: "ChargeWallet",

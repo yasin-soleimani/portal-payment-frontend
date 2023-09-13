@@ -4,22 +4,17 @@
     v-if="showSidebar"
     :class="{ parentSidebarShow: hideText }"
   >
-    <div>
-      <button @click="toggleShowSidebar" class="sidebar-small">
-        <v-icon class="style-icon-button"> fas fa-times </v-icon>
-      </button>
-    </div>
     <img
-      class="logo mt-5"
-      src="../assets/images/card-iranian.png"
+      class="logo mt-10"
+      src="../assets/logo-white.png"
       alt="photo-logo-sidebar"
       width="100"
     />
 
-    <ul class="parent-item-list-sidebar mt-10 pl-0 py-1">
+    <ul class="parent-item-list-sidebar pl-0 py-1">
       <li
         @click="buttonExit(item)"
-        class="item-list-sidebar mr-3"
+        class="item-list-sidebar"
         v-for="(item, index) in itemSidebar"
         :key="index"
         :title="item.text"
@@ -28,21 +23,14 @@
           :class="{ 'justify-center': hideText }"
           class="parentLiSidebar full-width mt-6 mx-3"
         >
-          <v-icon
-            class="icon-list-sidebar"
-            :class="{ iconListItemShow: hideText }"
-          >
+          <v-icon class="icon-list-sidebar">
             {{ item.icon }}
           </v-icon>
-          <p :class="{ hideTextSidebar: hideText }">
+          <p class="sidebar-text">
             {{ item.text }}
           </p>
         </div>
       </li>
-
-      <button @click="toggleSpace" class="buttonLargeSidebar">
-        <v-icon class="style-icon-button"> fas fa-chevron-left </v-icon>
-      </button>
     </ul>
   </div>
 </template>
@@ -56,40 +44,36 @@ export default Vue.extend({
 
   data(): any {
     return {
-      hideText: false,
-
       itemSidebar: [
         {
           icon: "fas fa-home",
-          text: "خانه",
+          text: "صفحه اصلی",
           id: 1,
           pathName: "ListTransactions",
         },
         {
           icon: "fas fa-user-cog",
-          text: "تنظیمات پروفایل",
+          text: "خرید شارژ",
           id: 2,
           pathName: "CompletingFormSettingProfile",
         },
         {
           icon: "fas fa-store",
-          text: "فروشگاه من",
+          text: "خرید اینترنت",
           id: 3,
           pathName: "SelectStore",
         },
-        { icon: "fas fa-calendar-check", text: "گزارشات", id: 4, pathName: "" },
-        { icon: "fas fa-calendar-alt", text: "فاکتور ها", id: 5, pathName: "" },
         {
-          icon: "fas fa-credit-card",
-          text: "مدیریت کارت ها",
-          id: 6,
-          pathName: "CardManagement",
+          icon: "fas fa-calendar-check",
+          text: "پرداخت قبوض",
+          id: 4,
+          pathName: "",
         },
         {
-          icon: "fas fa-store-alt",
-          text: "فروشگاه ها",
-          id: 7,
-          pathName: "Stores",
+          icon: "fas fa-calendar-alt",
+          text: "خروج از حساب",
+          id: 5,
+          pathName: "",
         },
       ],
     };
@@ -109,10 +93,6 @@ export default Vue.extend({
       }
     },
 
-    toggleSpace() {
-      this.hideText = !this.hideText;
-    },
-
     toggleShowSidebar() {
       store.dispatch("panel/sidebarSmall");
       console.log("toggle sidebar small:", store.state.panel.sidebarSmall);
@@ -123,13 +103,13 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .parentSidebar {
-  background: $background-item-panel;
-  width: 250px;
-  min-width: 240px;
+  background-color: $background-item;
+  color: $background-color;
+  width: 200px;
+  min-width: 200px;
   max-width: 240px;
   min-height: 90vh;
   max-height: 90vh;
-  margin: 66px 30px 0px 0px;
   border-radius: $border-radius;
   transition: all 400ms ease;
   // height: 100vh;
@@ -189,31 +169,30 @@ export default Vue.extend({
     transition: 500ms all ease;
     font-size: 35px;
     line-height: 50px;
-    color: $color-text;
+    color: $background-color;
     margin: $margin-mx;
   }
 }
 
 .item-list-sidebar {
   list-style: none;
-  padding: 0px 10px;
+  padding: 6px 10px;
   justify-content: $justify-flex-start;
   text-align: $text-center;
   line-height: 30px;
   cursor: pointer;
   font-size: 0.875rem;
   border-left: 4px solid transparent;
-
-  &:hover {
-    border-left-color: #6d4286 !important;
-    color: $color-text;
-  }
 }
 
 .icon-list-sidebar {
   text-align: $text-center;
   transition: 500ms all ease;
-  color: $color-text;
+  color: $background-color;
+}
+
+.sidebar-text {
+  color: $background-color;
 }
 
 .buttonLargeSidebar {
@@ -231,6 +210,8 @@ export default Vue.extend({
 
 .parent-item-list-sidebar {
   list-style: none;
+  max-width: 80%;
+  margin: auto;
 }
 
 .hideTextSidebar {

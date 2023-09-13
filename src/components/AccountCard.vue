@@ -1,19 +1,33 @@
 <template>
-  <v-card class="itemCard mx-3 lighten-5 my-8">
+  <v-card class="itemCard mx-3 my-8" elevation="3">
     <v-card-text class="text-right">
-      <div class="d-flex justify-space-between">
-        <div class="pb-3 color-text">{{ title }}</div>
-        <div class="text-left primary--text">
-          <h4 class="mr-5">{{ value }} ریال</h4>
-        </div>
+      <div class="d-flex justify-space-between text-left">
+        <span class="card-text-color font-weight-blod mt-1"
+          >ریال پیمنت کارت</span
+        >
+
+        <img
+          class="text-left"
+          width="50px"
+          height="50px"
+          src="../assets/bank/bank/ic_bank_icc.png"
+          alt="bank|_logo"
+        />
       </div>
-      <hr />
-      <p class="pt-3 color-text" style="cursor: pointer">
-        {{ text }}
-        <v-icon class="mx-1" style="font-size: 15px">
-          {{ icon }}
-        </v-icon>
-      </p>
+      <div>
+        <span class="text-h5 card-number font-weight-light"
+          >1412721310254326</span
+        >
+      </div>
+      <div class="my-3">
+        <span class="card-text-color font-weight-bold">
+          محمد یاسین سلیمانی
+        </span>
+      </div>
+      <div class="d-flex justify-space-between">
+        <span class="card-text-color">cvv2: 5550</span>
+        <span class="card-text-color">1408/05</span>
+      </div>
     </v-card-text>
   </v-card>
 </template>
@@ -48,12 +62,24 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .itemCard {
-  max-height: 110px;
-  width: 330px;
+  max-height: 180px;
+  min-height: 180px;
+  width: 45%;
+  border-radius: 18px;
+  background-color: $background-color;
 }
 
 .color-text {
   color: $color-text;
+}
+
+.card-number {
+  letter-spacing: 5px !important;
+  color: $background-item;
+}
+
+.card-text-color {
+  color: $background-item;
 }
 
 @media screen and (max-width: 1820px) {

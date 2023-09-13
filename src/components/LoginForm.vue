@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-form @submit.prevent="onSubmit" class="mx-5">
+    <v-form @submit.prevent="onSubmit" class="mx-5 mt-6">
       <div class="parentInputLogin">
         <v-text-field
           outlined
-          class="styleInputLogin mt-4"
+          class="styleInputLogin mt-5"
           label="شماره موبایل"
           v-model.trim="$v.mobile.$model"
           :error-messages="mobileErrors"
@@ -17,7 +17,7 @@
       <div class="parentInputLogin">
         <v-text-field
           outlined
-          class="styleInputLogin mt-4"
+          class="styleInputLogin mt-5"
           label="گذرواژه"
           v-model.trim="$v.password.$model"
           :error-messages="passwordErrors"
@@ -36,19 +36,20 @@
           <v-btn
             text
             color="teal"
-            class="pa-1 ma-0"
+            class="mt-3 pa-1 ma-0"
             :to="{ name: 'ForgetPassword' }"
             >فراموشی رمز عبور</v-btn
           >
         </div>
       </div>
       <v-btn
+        min-width="60%"
+        max-width="60%"
         type="submit"
         block
-        depressed
         large
         color="primary"
-        class="mt-4 mb-5"
+        class="mt-6 mb-5 rounded-lg"
         :loading="loading"
         :disabled="$v.$invalid"
         >ورود</v-btn

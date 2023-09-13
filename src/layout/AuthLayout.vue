@@ -11,11 +11,11 @@ export default Vue.extend({
 });
 </script>
 
-<style>
+<style lang="scss">
 .parent-background-portal {
   all: unset;
   /* background-image: url("https://picsum.photos/1920/1080?random"); */
-  background-color: bisque;
+  background-color: #ffff;
   height: 100%;
   margin: 0;
   width: 1200px;
